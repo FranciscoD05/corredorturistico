@@ -1,0 +1,94 @@
+header {
+    background-color: #fcb35f; /* Color de fondo predeterminado */
+    padding: 20px;
+    color: rgb(0, 0, 0); /* Color de texto predeterminado */
+    transition: background-color 0.3s; /* Transición suave para cambios de color de fondo */
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el encabezado */
+  }
+  
+  body {
+    background-image: url('https://th.bing.com/th/id/R.1e780649fd244ac00dddfb4259cf784a?rik=1ZzPurwTH2XeEQ&pid=ImgRaw&r=0');
+  }
+  
+  /* Estilos para las secciones */
+  section {
+    width: 80%;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(231, 20, 20, 0.1);
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+
+  /* Estilos para los títulos de las secciones */
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h3{
+    color: #000000;
+    background-color: aliceblue;
+    text-align: center;
+  }
+  
+  /* Estilos específicos para cada sección */
+  #informaciongeneral {
+    background-color: #87DB5C;
+    color: #000000;
+  }
+  
+  #menu {
+    background-color: #DCA656;
+    color: #000000;
+  }
+  
+  #senderismo {
+    background-color: #FFFFAD;
+    color: #000000;
+  }
+  
+  #cascada {
+    background-color: #FFFF3A;
+    color: #333;
+    text-align: left;
+  }
+  
+  #ubicacion {
+    background-color: #a9f5a5;
+    color: #000000;
+    text-align: left;
+  }
+  
+  .map-responsive {
+    overflow:hidden;
+    padding-bottom:400px;
+    position:relative;
+    height:0;
+  }
+  
+  .map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+  
+  #btnregresar{
+    display:block;
+    background-color: #ff6565;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}

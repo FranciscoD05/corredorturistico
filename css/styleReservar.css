@@ -1,0 +1,50 @@
+
+        .container {
+            background-color: rgba(68, 243, 255, 0.8); /* Color de fondo con transparencia */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container h2 {
+            font-weight: bold;
+            color: #333; /* Color del texto */
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #555; /* Color del texto de las etiquetas */
+        }
+
+        .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 8px;
+            width: 100%;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .form-control:focus {
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .radio-label {
+            margin-right: 10px;
+        }
+
+        .btn-primary {
+            background-color: #00ff37;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #fffc43;
+        }

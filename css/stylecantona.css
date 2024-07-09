@@ -1,0 +1,105 @@
+header {
+    background-color: #2f353c; /* Color gris oscuro */
+    padding: 20px;
+    color: #d5d7dc; /* Color gris claro */
+    transition: background-color 0.3s; /* Transición suave para cambios de color de fondo */
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el encabezado */
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+    font-size: 24px; /* Tamaño del texto */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(46, 58, 60, 0.1); /* Sombra gris oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+    font-size: 18px; /* Tamaño del texto */
+    color: #000000; /* Color del texto negro */
+}
+
+/* Estilos para los títulos de las secciones */
+section h2 {
+    color: #2f353c; /* Color gris oscuro */
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+}
+
+/* Estilos específicos para cada sección */
+#historia {
+    background-color: rgba(91, 176, 231, 0.8); /* Azul claro con transparencia */
+}
+
+#museo {
+    background-color: rgba(168, 210, 132, 0.8); /* Verde claro con transparencia */
+}
+
+#actividades {
+    background-color: rgba(252, 191, 73, 0.8); /* Amarillo con transparencia */
+}
+
+#multimedia {
+    background-color: rgba(91, 176, 231, 0.8); /* Azul claro con transparencia */
+}
+
+#ubicacion {
+    background-color: rgba(168, 210, 132, 0.8); /* Verde claro con transparencia */
+    text-align: left;
+}
+
+#arquitectura {
+    background-color: rgba(252, 191, 73, 0.8); /* Amarillo con transparencia */
+    text-align: left;
+}
+
+#btnregistros {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 1px 1px;
+    background-color: none;
+    color: #d5d7dc; /* Color gris claro */
+    border: none;
+    cursor: pointer;
+    font-size: small;
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+}
+
+#btnregresar {
+    display: block;
+    background-color: rgba(82, 75, 57, 0.8); /* Marrón grisáceo con transparencia */
+    border: none;
+    color: #d5d7dc; /* Color gris claro */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 400px;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+  
+  
+  
+  

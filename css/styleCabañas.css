@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-md-6 {
+    flex: 0 0 48%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.cabana {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cabana:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cabana h2 {
+    color: #28a745;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cabana p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.cabana a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #17a2b8;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cabana a:hover {
+    background-color: #138496;
+}
+
+.btn-primary {
+    background-color: #ff5722;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+#btnregresar{
+    display:block;
+    background-color: #ff6565;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
