@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejecayan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleEjecayan.css">
+
+    <style>
+        body{
+            background-image: url('imagenes/ejecayan1.jpg');
+        }
+        .animated {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .animated.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ejecayan</h1>
+        </div>
+    </header>
+    <section id="informaciongeneral" class="container my-4 animated">
+        <div class="row">
+            <div class="col-md-6 align-self-start">
+                <h2>Informacion General</h2>
+            </div>
+
+            
+              <script src="js/scripts.js"></script>
+        </div>
+    </section>
+    <br>
+    <section id="menu" class="container my-4 animated">
+        <div class="row">
+            <div class="col-md-6 order-md-2 align-self-center">
+                <h2>Menu</h2>
+            </div>
+            <div class="col-md-6 order-md-1 align-self-start">
+                <img src="imagenes/ollasSanmiguel.jpg" alt="Museo de Cantona" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <h3>Actividades que ofrece Truchas Ejecayan</h3>
+    <section id="truchas" class="container my-4 animated">
+        <div class="row">
+            <div class="col-md-6 align-self-start">
+                <h5>Truchas Ejecayan</h5>
+                <p>Como ya es constumbre cada martes varios comerciantes de la region se dan cita en el centro de San Miguel para poder llevar acabo
+                    el tianguis que caracteriza a San Miguel, ya que aun se realiza el "Trueque" la cual es una actividad de intercambio de productos, por ejemplo, intercambiar una cazuela
+                    de barro con tortilla o verduras.
+                </p>
+                <p>En el tianguis podemos encontrar variedad de productos del lugar, como cazuelas, macetas, alcancias, etc. Ademas podemos encontrar
+                    varios puestos que ofrecen prodcutos de la canasta basica, tambien existen puestos que ofrecen ropa y calzado para toda la familia.
+                </p>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <img src="imagenes/sanmiguelindex.jpg" alt="Actividades en Cantona" class="img-fluid">
+            </div>
+        </div>        
+    </section>
+    <section id="cascada" class="container my-4 animated">
+        <div class="row">
+            <div class="col-md-6 order-md-2 align-self-center">
+                <h2>Cascada Velo de Novia</h2>
+                <p>El mayor atractivo turistico que ofrece este sitio son los trabajos realizados mediante la alfareria.
+                    Es un excelente lugar para adquirir productos elaborados a base de barro, como pueden ser: cazuelas, macetas, jarros, ollas, etc.
+                    Ademas en este lugar tambien podemos realizar la compra de artesanias de yeso, y ceramica.
+                </p>
+            </div>
+            <div class="col-md-6 order-md-1 align-self-start">
+                <img src="imagenes/SanMiguel.jpg" alt="Museo de Cantona" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <section id="ubicacion" class="container my-4 animated">
+        <div class="row">
+            <div class="col-md-6 order-md-2 align-self-center">
+                <h2>Ubicación</h2>
+                <p>El Valle de Apulco está a 1,300 metros sobre el nivel del mar, y 
+                se encuentra sobre la carretera Zacapoaxtla-Cuetzalan kilometro 4.5 Zacapoaxtla.
+                </p>
+            </div>
+            <div class="col-md-6 order-md-1 align-self-start">
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26767.439345652347!2d-97.58560258734434!3d19.834698850219493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da9772d3489845%3A0x3018444fe22df322!2sTruchas%20Ejecayan!5e0!3m2!1ses-419!2smx!4v1717186076347!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.animated');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+    <a class="btn" id="btnregresar" href="index.html">Volver al inicio</a>
+</body>
+</html>
